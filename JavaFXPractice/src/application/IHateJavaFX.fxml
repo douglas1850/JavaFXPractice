@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.IHateJavaFXController">
+   <children>
+      <HBox prefHeight="300.0" prefWidth="600.0">
+         <children>
+            <VBox prefHeight="300.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Label text="Check Box Objects">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <CheckBox fx:id="pepperoniCheckbox" mnemonicParsing="false" text="Pepperoni" />
+                  <CheckBox fx:id="onionCheckbox" mnemonicParsing="false" text="Onion" />
+                  <CheckBox fx:id="jalepneoCheckbox" mnemonicParsing="false" text="Jalepeno" />
+                  <Button mnemonicParsing="false" onAction="#pizzaButtonPushed" prefHeight="27.0" prefWidth="99.0" text="Order Pizza" />
+                  <Label fx:id="pizzaOrderLabel" alignment="TOP_LEFT" prefHeight="82.0" prefWidth="192.0" text="Label" />
+               </children>
+            </VBox>
+            <VBox prefHeight="300.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Label text="Choice Box Object">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox fx:id="choiceBox" prefWidth="150.0" />
+                  <Button mnemonicParsing="false" onAction="#choiceBoxButtonPushed" text="Favorite Fruit" />
+                  <Label fx:id="choiceBoxLabel" text="Label" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
